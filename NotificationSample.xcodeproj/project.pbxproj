@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2ABC1731270A46AC00C56ED3 /* TaskItemCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC1730270A46AC00C56ED3 /* TaskItemCreateView.swift */; };
+		2ABC1733270A47C200C56ED3 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC1732270A47C200C56ED3 /* KeyboardObserver.swift */; };
+		2AD915DB270A35C800B6564E /* TaskType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD915DA270A35C800B6564E /* TaskType.swift */; };
+		2AD915DE270A3DD900B6564E /* TaskItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD915DD270A3DD900B6564E /* TaskItemCell.swift */; };
+		2AD915E0270A415000B6564E /* TaskItemEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD915DF270A415000B6564E /* TaskItemEditView.swift */; };
 		2ADD41FF270A204C006D57BE /* NotificationSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD41FE270A204C006D57BE /* NotificationSampleApp.swift */; };
-		2ADD4201270A204C006D57BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4200270A204C006D57BE /* ContentView.swift */; };
+		2ADD4201270A204C006D57BE /* TaskItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4200270A204C006D57BE /* TaskItemListView.swift */; };
 		2ADD4203270A204D006D57BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD4202270A204D006D57BE /* Assets.xcassets */; };
 		2ADD4206270A204D006D57BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD4205270A204D006D57BE /* Preview Assets.xcassets */; };
 		2ADD4208270A204D006D57BE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4207270A204D006D57BE /* Persistence.swift */; };
@@ -16,6 +21,7 @@
 		2ADD4215270A204D006D57BE /* NotificationSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4214270A204D006D57BE /* NotificationSampleTests.swift */; };
 		2ADD421F270A204D006D57BE /* NotificationSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD421E270A204D006D57BE /* NotificationSampleUITests.swift */; };
 		2ADD4221270A204D006D57BE /* NotificationSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4220270A204D006D57BE /* NotificationSampleUITestsLaunchTests.swift */; };
+		2ADD4230270A3425006D57BE /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD422F270A3425006D57BE /* TaskItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2ABC1730270A46AC00C56ED3 /* TaskItemCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemCreateView.swift; sourceTree = "<group>"; };
+		2ABC1732270A47C200C56ED3 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		2AD915DA270A35C800B6564E /* TaskType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskType.swift; sourceTree = "<group>"; };
+		2AD915DD270A3DD900B6564E /* TaskItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemCell.swift; sourceTree = "<group>"; };
+		2AD915DF270A415000B6564E /* TaskItemEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemEditView.swift; sourceTree = "<group>"; };
 		2ADD41FB270A204C006D57BE /* NotificationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADD41FE270A204C006D57BE /* NotificationSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSampleApp.swift; sourceTree = "<group>"; };
-		2ADD4200270A204C006D57BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2ADD4200270A204C006D57BE /* TaskItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemListView.swift; sourceTree = "<group>"; };
 		2ADD4202270A204D006D57BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ADD4205270A204D006D57BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2ADD4207270A204D006D57BE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +59,8 @@
 		2ADD421A270A204D006D57BE /* NotificationSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADD421E270A204D006D57BE /* NotificationSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSampleUITests.swift; sourceTree = "<group>"; };
 		2ADD4220270A204D006D57BE /* NotificationSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2ADD422D270A28EF006D57BE /* NotificationSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationSample.entitlements; sourceTree = "<group>"; };
+		2ADD422F270A3425006D57BE /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +88,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AD915DC270A3DC700B6564E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2ADD4200270A204C006D57BE /* TaskItemListView.swift */,
+				2AD915DD270A3DD900B6564E /* TaskItemCell.swift */,
+				2AD915DF270A415000B6564E /* TaskItemEditView.swift */,
+				2ABC1730270A46AC00C56ED3 /* TaskItemCreateView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2ADD41F2270A204C006D57BE = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +122,10 @@
 		2ADD41FD270A204C006D57BE /* NotificationSample */ = {
 			isa = PBXGroup;
 			children = (
+				2AD915DC270A3DC700B6564E /* View */,
+				2ADD422E270A33F1006D57BE /* Object */,
+				2ADD422D270A28EF006D57BE /* NotificationSample.entitlements */,
 				2ADD41FE270A204C006D57BE /* NotificationSampleApp.swift */,
-				2ADD4200270A204C006D57BE /* ContentView.swift */,
 				2ADD4202270A204D006D57BE /* Assets.xcassets */,
 				2ADD4207270A204D006D57BE /* Persistence.swift */,
 				2ADD4209270A204D006D57BE /* NotificationSample.xcdatamodeld */,
@@ -131,6 +157,16 @@
 				2ADD4220270A204D006D57BE /* NotificationSampleUITestsLaunchTests.swift */,
 			);
 			path = NotificationSampleUITests;
+			sourceTree = "<group>";
+		};
+		2ADD422E270A33F1006D57BE /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				2ADD422F270A3425006D57BE /* TaskItem.swift */,
+				2AD915DA270A35C800B6564E /* TaskType.swift */,
+				2ABC1732270A47C200C56ED3 /* KeyboardObserver.swift */,
+			);
+			path = Object;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +299,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABC1733270A47C200C56ED3 /* KeyboardObserver.swift in Sources */,
 				2ADD420B270A204D006D57BE /* NotificationSample.xcdatamodeld in Sources */,
+				2ADD4230270A3425006D57BE /* TaskItem.swift in Sources */,
 				2ADD4208270A204D006D57BE /* Persistence.swift in Sources */,
-				2ADD4201270A204C006D57BE /* ContentView.swift in Sources */,
+				2AD915DE270A3DD900B6564E /* TaskItemCell.swift in Sources */,
+				2AD915E0270A415000B6564E /* TaskItemEditView.swift in Sources */,
+				2ADD4201270A204C006D57BE /* TaskItemListView.swift in Sources */,
+				2ABC1731270A46AC00C56ED3 /* TaskItemCreateView.swift in Sources */,
+				2AD915DB270A35C800B6564E /* TaskType.swift in Sources */,
 				2ADD41FF270A204C006D57BE /* NotificationSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,10 +466,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NotificationSample/NotificationSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NotificationSample/Preview Content\"";
-				DEVELOPMENT_TEAM = 8TL4SQKPSS;
+				DEVELOPMENT_TEAM = 7Q6B2W96J9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -441,7 +484,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.aoi-okawa.NotificationSample";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ao1011.NotificationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -454,10 +497,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NotificationSample/NotificationSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NotificationSample/Preview Content\"";
-				DEVELOPMENT_TEAM = 8TL4SQKPSS;
+				DEVELOPMENT_TEAM = 7Q6B2W96J9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -471,7 +515,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.aoi-okawa.NotificationSample";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ao1011.NotificationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

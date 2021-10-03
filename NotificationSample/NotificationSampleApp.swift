@@ -13,8 +13,8 @@ struct NotificationSampleApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            TaskItemListView()
+                .environment(\.managedObjectContext, persistenceController.persistentContainer.viewContext)
         }
     }
 }
