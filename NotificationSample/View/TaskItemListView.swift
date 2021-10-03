@@ -18,18 +18,17 @@ struct TaskItemListView: View {
         NavigationView {
             List {
                 ForEach(taskItems, id: \.self) { item in
-                    ZStack {
+                    NavigationLink {
+                        TaskItemEditView(taskItem: item)
+                    } label: {
                         TaskItemCell(taskItem: item)
-                        NavigationLink(
-                            destination: TaskItemEditView(taskItem: item)
-                                        .environment(\.managedObjectContext, self.viewContext)
-                        ) {
-                            EmptyView()
-                        }
                     }
                 }
                 .onDelete(perform: deleteItems)
             }
+            .fullScreenCover(isPresented: $showingTaskItemCrateView, content: {
+                TaskItemCreateView(showTaskItemCreateView: $showingTaskItemCrateView)
+            })
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()

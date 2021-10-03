@@ -13,7 +13,7 @@ extension TaskItem {
         in managedObjectContext: NSManagedObjectContext,
         content: String,
         taskType: String,
-        date: Date?
+        date: Date
     ) {
         let newObject = self.init(context: managedObjectContext)
         newObject.content = content
