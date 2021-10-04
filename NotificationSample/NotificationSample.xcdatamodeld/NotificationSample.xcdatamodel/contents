@@ -4,7 +4,7 @@
         <attribute name="content" attributeType="String" defaultValueString=""/>
         <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" attributeType="String" defaultValueString=""/>
-        <attribute name="taskType" attributeType="String" defaultValueString="memo"/>
+        <attribute name="priority" attributeType="String" defaultValueString="memo"/>
     </entity>
     <elements>
         <element name="TaskItem" positionX="-63" positionY="-18" width="128" height="89"/>

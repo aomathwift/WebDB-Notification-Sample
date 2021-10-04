@@ -19,7 +19,7 @@ extension TaskItem {
     @NSManaged public var content: String
     @NSManaged public var date: Date
     @NSManaged public var id: String
-    @NSManaged public var taskType: String
+    @NSManaged public var priority: String
 
 }
 

@@ -12,16 +12,17 @@ extension TaskItem {
     static func create(
         in managedObjectContext: NSManagedObjectContext,
         content: String,
-        taskType: String,
+        priority: String,
         date: Date
-    ) {
+    ) -> String {
         let newObject = self.init(context: managedObjectContext)
         newObject.content = content
-        newObject.taskType = taskType
+        newObject.priority = priority
         newObject.date = date
         newObject.id = UUID().uuidString
         do {
             try managedObjectContext.save()
+            return newObject.id
         } catch {
             let nsError = error as NSError
             fatalError("Unresolved error \(nsError), \(nsError.userInfo)")

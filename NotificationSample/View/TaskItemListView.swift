@@ -27,7 +27,7 @@ struct TaskItemListView: View {
                 .onDelete(perform: deleteItems)
             }
             .fullScreenCover(isPresented: $showingTaskItemCrateView, content: {
-                TaskItemCreateView(showTaskItemCreateView: $showingTaskItemCrateView)
+                TaskItemCreateView()
             })
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {

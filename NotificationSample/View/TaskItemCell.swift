@@ -12,16 +12,14 @@ struct TaskItemCell: View {
     @ObservedObject var taskItem: TaskItem
     var body: some View {
         HStack(alignment: .center, spacing: 5) {
-            if taskItem.taskType == TaskType.scheduled.rawValue {
+            if taskItem.priority == Priority.high.rawValue {
                 Image(systemName: "clock")
-                Text(taskItem.content)
-                Spacer()
-                Text(taskItem.date, formatter: formatter)
             } else {
                 Image(systemName: "list.bullet.circle")
-                Text(taskItem.content)
-                Spacer()
             }
+            Text(taskItem.content)
+            Spacer()
+            Text(taskItem.date, formatter: formatter)
         }
     }
 

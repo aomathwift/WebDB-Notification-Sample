@@ -10,7 +10,8 @@
 		2ABC1731270A46AC00C56ED3 /* TaskItemCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC1730270A46AC00C56ED3 /* TaskItemCreateView.swift */; };
 		2ABC173A270A62AF00C56ED3 /* TaskItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC1738270A62AF00C56ED3 /* TaskItem+CoreDataClass.swift */; };
 		2ABC173B270A62AF00C56ED3 /* TaskItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC1739270A62AF00C56ED3 /* TaskItem+CoreDataProperties.swift */; };
-		2AD915DB270A35C800B6564E /* TaskType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD915DA270A35C800B6564E /* TaskType.swift */; };
+		2ABC173D270A870900C56ED3 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC173C270A870900C56ED3 /* Image.xcassets */; };
+		2AD915DB270A35C800B6564E /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD915DA270A35C800B6564E /* Priority.swift */; };
 		2AD915DE270A3DD900B6564E /* TaskItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD915DD270A3DD900B6564E /* TaskItemCell.swift */; };
 		2AD915E0270A415000B6564E /* TaskItemEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD915DF270A415000B6564E /* TaskItemEditView.swift */; };
 		2ADD41FF270A204C006D57BE /* NotificationSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD41FE270A204C006D57BE /* NotificationSampleApp.swift */; };
@@ -20,20 +21,11 @@
 		2ADD4208270A204D006D57BE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4207270A204D006D57BE /* Persistence.swift */; };
 		2ADD420B270A204D006D57BE /* NotificationSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4209270A204D006D57BE /* NotificationSample.xcdatamodeld */; };
 		2ADD4215270A204D006D57BE /* NotificationSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4214270A204D006D57BE /* NotificationSampleTests.swift */; };
-		2ADD421F270A204D006D57BE /* NotificationSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD421E270A204D006D57BE /* NotificationSampleUITests.swift */; };
-		2ADD4221270A204D006D57BE /* NotificationSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4220270A204D006D57BE /* NotificationSampleUITestsLaunchTests.swift */; };
 		2ADD4230270A3425006D57BE /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD422F270A3425006D57BE /* TaskItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		2ADD4211270A204D006D57BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2ADD41F3270A204C006D57BE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2ADD41FA270A204C006D57BE;
-			remoteInfo = NotificationSample;
-		};
-		2ADD421B270A204D006D57BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2ADD41F3270A204C006D57BE /* Project object */;
 			proxyType = 1;
@@ -46,7 +38,8 @@
 		2ABC1730270A46AC00C56ED3 /* TaskItemCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemCreateView.swift; sourceTree = "<group>"; };
 		2ABC1738270A62AF00C56ED3 /* TaskItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2ABC1739270A62AF00C56ED3 /* TaskItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		2AD915DA270A35C800B6564E /* TaskType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskType.swift; sourceTree = "<group>"; };
+		2ABC173C270A870900C56ED3 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		2AD915DA270A35C800B6564E /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
 		2AD915DD270A3DD900B6564E /* TaskItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemCell.swift; sourceTree = "<group>"; };
 		2AD915DF270A415000B6564E /* TaskItemEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemEditView.swift; sourceTree = "<group>"; };
 		2ADD41FB270A204C006D57BE /* NotificationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,9 +51,6 @@
 		2ADD420A270A204D006D57BE /* NotificationSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotificationSample.xcdatamodel; sourceTree = "<group>"; };
 		2ADD4210270A204D006D57BE /* NotificationSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADD4214270A204D006D57BE /* NotificationSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSampleTests.swift; sourceTree = "<group>"; };
-		2ADD421A270A204D006D57BE /* NotificationSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2ADD421E270A204D006D57BE /* NotificationSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSampleUITests.swift; sourceTree = "<group>"; };
-		2ADD4220270A204D006D57BE /* NotificationSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2ADD422D270A28EF006D57BE /* NotificationSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationSample.entitlements; sourceTree = "<group>"; };
 		2ADD422F270A3425006D57BE /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,13 +64,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2ADD420D270A204D006D57BE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2ADD4217270A204D006D57BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -106,7 +89,6 @@
 			children = (
 				2ADD41FD270A204C006D57BE /* NotificationSample */,
 				2ADD4213270A204D006D57BE /* NotificationSampleTests */,
-				2ADD421D270A204D006D57BE /* NotificationSampleUITests */,
 				2ADD41FC270A204C006D57BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,7 +98,6 @@
 			children = (
 				2ADD41FB270A204C006D57BE /* NotificationSample.app */,
 				2ADD4210270A204D006D57BE /* NotificationSampleTests.xctest */,
-				2ADD421A270A204D006D57BE /* NotificationSampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +113,7 @@
 				2ADD4207270A204D006D57BE /* Persistence.swift */,
 				2ADD4209270A204D006D57BE /* NotificationSample.xcdatamodeld */,
 				2ADD4204270A204D006D57BE /* Preview Content */,
+				2ABC173C270A870900C56ED3 /* Image.xcassets */,
 			);
 			path = NotificationSample;
 			sourceTree = "<group>";
@@ -152,22 +134,13 @@
 			path = NotificationSampleTests;
 			sourceTree = "<group>";
 		};
-		2ADD421D270A204D006D57BE /* NotificationSampleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2ADD421E270A204D006D57BE /* NotificationSampleUITests.swift */,
-				2ADD4220270A204D006D57BE /* NotificationSampleUITestsLaunchTests.swift */,
-			);
-			path = NotificationSampleUITests;
-			sourceTree = "<group>";
-		};
 		2ADD422E270A33F1006D57BE /* Object */ = {
 			isa = PBXGroup;
 			children = (
 				2ABC1738270A62AF00C56ED3 /* TaskItem+CoreDataClass.swift */,
 				2ABC1739270A62AF00C56ED3 /* TaskItem+CoreDataProperties.swift */,
 				2ADD422F270A3425006D57BE /* TaskItem.swift */,
-				2AD915DA270A35C800B6564E /* TaskType.swift */,
+				2AD915DA270A35C800B6564E /* Priority.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -210,24 +183,6 @@
 			productReference = 2ADD4210270A204D006D57BE /* NotificationSampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2ADD4219270A204D006D57BE /* NotificationSampleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2ADD422A270A204D006D57BE /* Build configuration list for PBXNativeTarget "NotificationSampleUITests" */;
-			buildPhases = (
-				2ADD4216270A204D006D57BE /* Sources */,
-				2ADD4217270A204D006D57BE /* Frameworks */,
-				2ADD4218270A204D006D57BE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2ADD421C270A204D006D57BE /* PBXTargetDependency */,
-			);
-			name = NotificationSampleUITests;
-			productName = NotificationSampleUITests;
-			productReference = 2ADD421A270A204D006D57BE /* NotificationSampleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -242,10 +197,6 @@
 						CreatedOnToolsVersion = 13.0;
 					};
 					2ADD420F270A204D006D57BE = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 2ADD41FA270A204C006D57BE;
-					};
-					2ADD4219270A204D006D57BE = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 2ADD41FA270A204C006D57BE;
 					};
@@ -266,7 +217,6 @@
 			targets = (
 				2ADD41FA270A204C006D57BE /* NotificationSample */,
 				2ADD420F270A204D006D57BE /* NotificationSampleTests */,
-				2ADD4219270A204D006D57BE /* NotificationSampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -277,18 +227,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ADD4206270A204D006D57BE /* Preview Assets.xcassets in Resources */,
+				2ABC173D270A870900C56ED3 /* Image.xcassets in Resources */,
 				2ADD4203270A204D006D57BE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2ADD420E270A204D006D57BE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2ADD4218270A204D006D57BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,7 +254,7 @@
 				2AD915E0270A415000B6564E /* TaskItemEditView.swift in Sources */,
 				2ADD4201270A204C006D57BE /* TaskItemListView.swift in Sources */,
 				2ABC1731270A46AC00C56ED3 /* TaskItemCreateView.swift in Sources */,
-				2AD915DB270A35C800B6564E /* TaskType.swift in Sources */,
+				2AD915DB270A35C800B6564E /* Priority.swift in Sources */,
 				2ADD41FF270A204C006D57BE /* NotificationSampleApp.swift in Sources */,
 				2ABC173A270A62AF00C56ED3 /* TaskItem+CoreDataClass.swift in Sources */,
 			);
@@ -324,15 +268,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2ADD4216270A204D006D57BE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2ADD421F270A204D006D57BE /* NotificationSampleUITests.swift in Sources */,
-				2ADD4221270A204D006D57BE /* NotificationSampleUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -340,11 +275,6 @@
 			isa = PBXTargetDependency;
 			target = 2ADD41FA270A204C006D57BE /* NotificationSample */;
 			targetProxy = 2ADD4211270A204D006D57BE /* PBXContainerItemProxy */;
-		};
-		2ADD421C270A204D006D57BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2ADD41FA270A204C006D57BE /* NotificationSample */;
-			targetProxy = 2ADD421B270A204D006D57BE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -482,7 +412,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,7 +443,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -536,7 +466,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8TL4SQKPSS;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -561,7 +491,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8TL4SQKPSS;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -574,52 +504,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotificationSample.app/NotificationSample";
-			};
-			name = Release;
-		};
-		2ADD422B270A204D006D57BE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8TL4SQKPSS;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.aoi-okawa.NotificationSampleUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NotificationSample;
-			};
-			name = Debug;
-		};
-		2ADD422C270A204D006D57BE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8TL4SQKPSS;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.aoi-okawa.NotificationSampleUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NotificationSample;
 			};
 			name = Release;
 		};
@@ -649,15 +533,6 @@
 			buildConfigurations = (
 				2ADD4228270A204D006D57BE /* Debug */,
 				2ADD4229270A204D006D57BE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2ADD422A270A204D006D57BE /* Build configuration list for PBXNativeTarget "NotificationSampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2ADD422B270A204D006D57BE /* Debug */,
-				2ADD422C270A204D006D57BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

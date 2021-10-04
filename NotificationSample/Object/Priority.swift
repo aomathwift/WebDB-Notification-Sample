@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum TaskType: String {
-    case memo
-    case scheduled
+enum Priority: String {
+    case high
+    case low
 }

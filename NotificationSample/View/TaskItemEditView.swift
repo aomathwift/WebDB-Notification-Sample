@@ -7,24 +7,25 @@
 
 import Combine
 import SwiftUI
+import UserNotifications
 
 struct TaskItemEditView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var taskItem: TaskItem
+    private let notificationCenter = UNUserNotificationCenter.current()
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
-            Picker("Task Type", selection: $taskItem.taskType) {
-                Text(TaskType.memo.rawValue).tag(TaskType.memo.rawValue)
-                Text(TaskType.scheduled.rawValue).tag(TaskType.scheduled.rawValue)
+            Picker("Task Type", selection: $taskItem.priority) {
+                Text(Priority.low.rawValue).tag(Priority.low.rawValue)
+                Text(Priority.high.rawValue).tag(Priority.high.rawValue)
             }
             TextField("Content", text: $taskItem.content)
                 .textFieldStyle(.roundedBorder)
-            if taskItem.taskType == TaskType.scheduled.rawValue {
-                DatePicker("Scheduled Date", selection: $taskItem.date)
-            }
+            DatePicker("Scheduled Date", selection: $taskItem.date)
             Button {
                 PersistenceController.shared.saveContext()
+                updateNotification()
                 presentationMode.wrappedValue.dismiss()
             } label: {
                 Text("Update")
@@ -33,5 +34,36 @@ struct TaskItemEditView: View {
         }
         .padding()
         .navigationTitle("Edit Task")
+    }
+
+    private func updateNotification() {
+        notificationCenter.removePendingNotificationRequests(withIdentifiers: [taskItem.id])
+        let notificationContent = UNMutableNotificationContent()
+        notificationContent.title = "Reminder"
+        notificationContent.body = taskItem.content
+        notificationContent.interruptionLevel = taskItem.priority == Priority.high.rawValue ? .timeSensitive : .active
+        notificationContent.relevanceScore = 1.0
+        if let imageURL = Bundle.main.url(forResource: "penguin", withExtension: "png"),
+           let imageAttachment = try? UNNotificationAttachment(identifier: "ImageAttachment", url: imageURL, options: nil) {
+            notificationContent.attachments.append(imageAttachment)
+        }
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(identifier: "Asia/Tokyo")!
+        calendar.locale = Locale(identifier: "ja_JP")
+        let date = DateComponents(
+            calendar: calendar,
+            year: calendar.component(.year, from: taskItem.date),
+            month: calendar.component(.month, from: taskItem.date),
+            day: calendar.component(.day, from: taskItem.date),
+            hour: calendar.component(.hour, from: taskItem.date),
+            minute: calendar.component(.minute, from: taskItem.date)
+        )
+        let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: false)
+        let request = UNNotificationRequest(identifier: taskItem.id, content: notificationContent, trigger: trigger)
+        notificationCenter.add(request) { error in
+            if let error = error {
+                print(error)
+            }
+        }
     }
 }
