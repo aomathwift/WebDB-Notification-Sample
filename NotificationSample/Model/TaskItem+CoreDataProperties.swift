@@ -23,6 +23,4 @@ extension TaskItem {
 
 }
 
-extension TaskItem : Identifiable {
-
-}
+extension TaskItem : Identifiable {}

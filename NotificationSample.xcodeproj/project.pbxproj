@@ -20,19 +20,8 @@
 		2ADD4206270A204D006D57BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD4205270A204D006D57BE /* Preview Assets.xcassets */; };
 		2ADD4208270A204D006D57BE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4207270A204D006D57BE /* Persistence.swift */; };
 		2ADD420B270A204D006D57BE /* NotificationSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4209270A204D006D57BE /* NotificationSample.xcdatamodeld */; };
-		2ADD4215270A204D006D57BE /* NotificationSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4214270A204D006D57BE /* NotificationSampleTests.swift */; };
 		2ADD4230270A3425006D57BE /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD422F270A3425006D57BE /* TaskItem.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2ADD4211270A204D006D57BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2ADD41F3270A204C006D57BE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2ADD41FA270A204C006D57BE;
-			remoteInfo = NotificationSample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2ABC1730270A46AC00C56ED3 /* TaskItemCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemCreateView.swift; sourceTree = "<group>"; };
@@ -49,21 +38,12 @@
 		2ADD4205270A204D006D57BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2ADD4207270A204D006D57BE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		2ADD420A270A204D006D57BE /* NotificationSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotificationSample.xcdatamodel; sourceTree = "<group>"; };
-		2ADD4210270A204D006D57BE /* NotificationSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2ADD4214270A204D006D57BE /* NotificationSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSampleTests.swift; sourceTree = "<group>"; };
 		2ADD422D270A28EF006D57BE /* NotificationSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationSample.entitlements; sourceTree = "<group>"; };
 		2ADD422F270A3425006D57BE /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2ADD41F8270A204C006D57BE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2ADD420D270A204D006D57BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -88,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				2ADD41FD270A204C006D57BE /* NotificationSample */,
-				2ADD4213270A204D006D57BE /* NotificationSampleTests */,
 				2ADD41FC270A204C006D57BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				2ADD41FB270A204C006D57BE /* NotificationSample.app */,
-				2ADD4210270A204D006D57BE /* NotificationSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				2AD915DC270A3DC700B6564E /* View */,
-				2ADD422E270A33F1006D57BE /* Object */,
+				2ADD422E270A33F1006D57BE /* Model */,
 				2ADD422D270A28EF006D57BE /* NotificationSample.entitlements */,
 				2ADD41FE270A204C006D57BE /* NotificationSampleApp.swift */,
 				2ADD4202270A204D006D57BE /* Assets.xcassets */,
@@ -126,15 +104,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2ADD4213270A204D006D57BE /* NotificationSampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				2ADD4214270A204D006D57BE /* NotificationSampleTests.swift */,
-			);
-			path = NotificationSampleTests;
-			sourceTree = "<group>";
-		};
-		2ADD422E270A33F1006D57BE /* Object */ = {
+		2ADD422E270A33F1006D57BE /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				2ABC1738270A62AF00C56ED3 /* TaskItem+CoreDataClass.swift */,
@@ -142,7 +112,7 @@
 				2ADD422F270A3425006D57BE /* TaskItem.swift */,
 				2AD915DA270A35C800B6564E /* Priority.swift */,
 			);
-			path = Object;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +135,6 @@
 			productReference = 2ADD41FB270A204C006D57BE /* NotificationSample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2ADD420F270A204D006D57BE /* NotificationSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2ADD4227270A204D006D57BE /* Build configuration list for PBXNativeTarget "NotificationSampleTests" */;
-			buildPhases = (
-				2ADD420C270A204D006D57BE /* Sources */,
-				2ADD420D270A204D006D57BE /* Frameworks */,
-				2ADD420E270A204D006D57BE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2ADD4212270A204D006D57BE /* PBXTargetDependency */,
-			);
-			name = NotificationSampleTests;
-			productName = NotificationSampleTests;
-			productReference = 2ADD4210270A204D006D57BE /* NotificationSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,10 +147,6 @@
 				TargetAttributes = {
 					2ADD41FA270A204C006D57BE = {
 						CreatedOnToolsVersion = 13.0;
-					};
-					2ADD420F270A204D006D57BE = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 2ADD41FA270A204C006D57BE;
 					};
 				};
 			};
@@ -216,7 +164,6 @@
 			projectRoot = "";
 			targets = (
 				2ADD41FA270A204C006D57BE /* NotificationSample */,
-				2ADD420F270A204D006D57BE /* NotificationSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,13 +176,6 @@
 				2ADD4206270A204D006D57BE /* Preview Assets.xcassets in Resources */,
 				2ABC173D270A870900C56ED3 /* Image.xcassets in Resources */,
 				2ADD4203270A204D006D57BE /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2ADD420E270A204D006D57BE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,23 +200,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2ADD420C270A204D006D57BE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2ADD4215270A204D006D57BE /* NotificationSampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2ADD4212270A204D006D57BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2ADD41FA270A204C006D57BE /* NotificationSample */;
-			targetProxy = 2ADD4211270A204D006D57BE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2ADD4222270A204D006D57BE /* Debug */ = {
@@ -457,56 +381,6 @@
 			};
 			name = Release;
 		};
-		2ADD4228270A204D006D57BE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8TL4SQKPSS;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.aoi-okawa.NotificationSampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotificationSample.app/NotificationSample";
-			};
-			name = Debug;
-		};
-		2ADD4229270A204D006D57BE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8TL4SQKPSS;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.aoi-okawa.NotificationSampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotificationSample.app/NotificationSample";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -524,15 +398,6 @@
 			buildConfigurations = (
 				2ADD4225270A204D006D57BE /* Debug */,
 				2ADD4226270A204D006D57BE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2ADD4227270A204D006D57BE /* Build configuration list for PBXNativeTarget "NotificationSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2ADD4228270A204D006D57BE /* Debug */,
-				2ADD4229270A204D006D57BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
