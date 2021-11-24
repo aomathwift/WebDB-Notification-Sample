@@ -20,8 +20,9 @@ struct TaskItemCreateView: View {
         NavigationView {
             VStack(alignment: .center, spacing: 10) {
                 Picker("Task Type", selection: $priority) {
-                    Text(Priority.low.rawValue).tag(Priority.low)
-                    Text(Priority.high.rawValue).tag(Priority.high)
+                    ForEach(Priority.allCases, id: \.rawValue) { priority in
+                        Text(priority.rawValue).tag(priority.rawValue)
+                    }
                 }
                 TextField("Content", text: $content)
                     .textFieldStyle(.roundedBorder)

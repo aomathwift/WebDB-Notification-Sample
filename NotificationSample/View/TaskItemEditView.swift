@@ -17,8 +17,9 @@ struct TaskItemEditView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
             Picker("Task Type", selection: $taskItem.priority) {
-                Text(Priority.low.rawValue).tag(Priority.low.rawValue)
-                Text(Priority.high.rawValue).tag(Priority.high.rawValue)
+                ForEach(Priority.allCases, id: \.rawValue) { priority in
+                    Text(priority.rawValue).tag(priority.rawValue)
+                }
             }
             TextField("Content", text: $taskItem.content)
                 .textFieldStyle(.roundedBorder)
@@ -42,7 +43,7 @@ struct TaskItemEditView: View {
         notificationContent.title = "Reminder"
         notificationContent.body = taskItem.content
         notificationContent.interruptionLevel = taskItem.priority == Priority.high.rawValue ? .timeSensitive : .active
-        notificationContent.relevanceScore = 1.0
+        notificationContent.relevanceScore = taskItem.priority == Priority.low.rawValue ? 0.5 : 1.0
         if let imageURL = Bundle.main.url(forResource: "penguin", withExtension: "png"),
            let imageAttachment = try? UNNotificationAttachment(identifier: "ImageAttachment", url: imageURL, options: nil) {
             notificationContent.attachments.append(imageAttachment)
