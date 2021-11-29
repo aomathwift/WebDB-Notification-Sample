@@ -44,7 +44,7 @@ struct TaskItemEditView: View {
         notificationContent.body = taskItem.content
         notificationContent.interruptionLevel = taskItem.priority == Priority.high.rawValue ? .timeSensitive : .active
         notificationContent.relevanceScore = taskItem.priority == Priority.low.rawValue ? 0.5 : 1.0
-        if let imageURL = Bundle.main.url(forResource: "penguin", withExtension: "png"),
+        if let imageURL = Bundle.main.url(forResource: "sample-image", withExtension: "png"),
            let imageAttachment = try? UNNotificationAttachment(identifier: "ImageAttachment", url: imageURL, options: nil) {
             notificationContent.attachments.append(imageAttachment)
         }

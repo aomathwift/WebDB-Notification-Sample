@@ -59,10 +59,12 @@ struct TaskItemCreateView: View {
         notificationContent.title = "Reminder"
         notificationContent.body = content
         notificationContent.interruptionLevel = priority.rawValue == Priority.high.rawValue ? .timeSensitive : .active
-        notificationContent.relevanceScore = 1.0
-        if let imageURL = Bundle.main.url(forResource: "penguin", withExtension: "png"),
-           let imageAttachment = try? UNNotificationAttachment(identifier: "ImageAttachment", url: imageURL, options: nil) {
-            notificationContent.attachments.append(imageAttachment)
+        notificationContent.relevanceScore = priority.rawValue == Priority.low.rawValue ? 0.5 : 1.0
+        if priority.rawValue == Priority.medium.rawValue {
+            if let imageURL = Bundle.main.url(forResource: "sample", withExtension: "png"),
+               let imageAttachment = try? UNNotificationAttachment(identifier: "ImageAttachment", url: imageURL, options: nil) {
+                notificationContent.attachments = [imageAttachment]
+            }
         }
         var calendar = Calendar(identifier: .gregorian)
         calendar.timeZone = TimeZone(identifier: "Asia/Tokyo")!

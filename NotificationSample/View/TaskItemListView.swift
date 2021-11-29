@@ -48,8 +48,7 @@ struct TaskItemListView: View {
 
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
-            offsets.map { taskItems[$0] }.forEach(viewContext.delete)
-            PersistenceController.shared.saveContext()
+            taskItems.delete(at: offsets, from: viewContext)
         }
     }
 }
